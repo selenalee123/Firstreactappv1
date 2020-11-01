@@ -1,21 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {View,Text} from 'react-native';
+//import Pro from "./src/screens/Pro";
+import Test from "./src/screens/Test";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+//import Profilescreen from "./src/screens/Profilescreen";
+//import Onboarding from "./src/screen/Onboarding"
+
+
+
+export default class App extends React.Component {
+  render(){
+    return(
+      <View style={styles.container}>
+          <Test/>
+      </View>
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
